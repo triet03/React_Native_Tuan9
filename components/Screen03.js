@@ -1,7 +1,7 @@
 import { Text, SafeAreaView, StyleSheet, Button, Image, TouchableOpacity, View, TextInput } from 'react-native';
 import React from 'react'
 
-export default function Screen03() {
+export default function Screen03({navigation}) {
   return (
    <View style={styles.container}>
        <Image style={styles.imHeader} source = {require('../assets/header.jpg')}/>

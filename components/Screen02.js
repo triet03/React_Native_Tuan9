@@ -1,7 +1,7 @@
 import { Text, SafeAreaView, StyleSheet, Button, Image, TouchableOpacity, View, TextInput } from 'react-native';
 import React from 'react'
 
-export default function App(navigation) {
+export default function Screen02({navigation}) {
   return (
    <View style={styles.container}>
           <Image style={styles.logo} source = {require('../assets/google-logo.png')}/>

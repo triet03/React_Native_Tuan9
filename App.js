@@ -1,19 +1,39 @@
-import { Text, SafeAreaView, StyleSheet, Button, Image, TouchableOpacity, View } from 'react-native';
-import React from 'react'
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-export default function App() {
+
+const Stack = createStackNavigator();
+
+import Screen01 from './components/Screen01';
+import Screen02 from './components/Screen02';
+import Screen03 from './components/Screen03';
+
+
+
+export default function App({navigation}) {
+
   return (
-   <View style={styles.container}>
-       
-   </View>
+     <NavigationContainer>
+      <Stack.Navigator initialRouteName="Screen01">
+        <Stack.Screen
+          name="Screen01"
+          component={Screen01}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Screen02"
+          component={Screen02}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Screen03"
+          component={Screen03}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>   
+    
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
-    padding: 8,
-  },
-});

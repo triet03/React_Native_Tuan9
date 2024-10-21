@@ -1,7 +1,7 @@
 import { Text, SafeAreaView, StyleSheet, Button, Image, TouchableOpacity, View } from 'react-native';
 import React from 'react'
 
-export default function App(navigation) {
+export default function Screen01({navigation}) {
   return (
    <View style={styles.container}>
         <View style={styles.imageView}>
