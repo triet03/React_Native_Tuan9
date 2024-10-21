@@ -28,7 +28,7 @@ export default function App(navigation) {
             placeholder = "Enter your user address"
           />
 
-          <TouchableOpacity style={styles.buttonSign} onPress={() => navigation.navigate('Screen02')}>
+          <TouchableOpacity style={styles.buttonSign} onPress={() => navigation.navigate('Screen03')}>
             <Text style={styles.textSign}> Continue </Text>
           </TouchableOpacity>
 
